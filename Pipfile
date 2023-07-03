@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 djoser = "*"
 djangorestframework-simplejwt = "~=5.2.1"
+django-bootstrap4 = "*"
 
 [dev-packages]
 

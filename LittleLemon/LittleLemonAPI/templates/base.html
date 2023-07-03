@@ -1,0 +1,147 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <!--COLLAPSING NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom border-bottom border-dark">
+        <div class="navbar-brand">Bar and Diner</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav container-fluid">
+                <div class="nav-link"><a href="..">Home</a></div>
+                <div class="nav-link"><a href="">Menu</a></div>
+                <div class="nav-link"><a href="">Specials</a></div>
+                <div class="nav-link"><a href="">Locations</a></div>
+            </div>
+        </div>
+    </nav>
+    <!--COLLAPSING NAVBAR-->
+
+    <!--CAROUSEL-->
+    <div id="myCarousel" class="carousel slide rounded-bottom border-bottom border-dark" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-overlay"></div>
+            <img class="carousel-image" src="{% static 'images/dining-room.jpg' %}">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-overlay"></div>
+            <img class="carousel-image" src="{% static 'images/bar.jpg' %}">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-overlay"></div>
+            <img class="carousel-image" src="{% static 'images/oven.jpg' %}">
+          </div>
+          <!--Logo overlay-->
+          <div class="logo-overlay">
+            <img src="{% static 'images/logo-compressed.png' %}" alt="Logo">
+          </div>
+        </div>
+      </div>
+        <!-- Previous and Next buttons 
+        <a class="carousel-control-prev" role="button" data-slide="prev" href="#myCarousel">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" role="button" data-slide="next" href="#myCarousel">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    -->
+    <script>
+        $(document).ready(function () {
+            $('#myCarousel').carousel({ pause: "false" });
+        });
+     </script>
+    <!--CAROUSEL-->
+    
+    <!--ABOUT-->
+     <div class="container-flex" id="header">
+        <div class="row justify-content-end">
+          <div class="col-5">
+            <h1 class="p-3" style="opacity: 1; transition: opacity 1s, color 1s; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);">
+              About Us
+            </h1>
+            <p class="lead p-3" style="font-weight: bold; text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis sapien. 
+                Donec aliquam nibh neque, sed vestibulum lorem bibendum ut. Cras ultricies elit ac aliquet viverra. 
+                Nunc tincidunt risus ac mattis porttitor. Cras mollis sodales lectus, sit amet dictum enim interdum ut. 
+                Phasellus ac odio semper, vehicula felis vel, faucibus ligula. Donec id felis sit amet mauris auctor
+                volutpat ac id odio. Sed id sem at quam maximus condimentum eget non nibh. Duis in nisl diam. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi 
+                posuere non elit ut efficitur. Morbi in velit cursus, luctus orci et, vehicula erat. Vivamus 
+                vehicula ut ante ut interdum. Duis at tortor fermentum, accumsan felis vel, accumsan metus. Fusce 
+                fermentum interdum dui. Proin pulvinar dapibus magna, eget venenatis est iaculis vel.
+            </p>
+          </div>
+        </div>   
+     </div>
+
+     <div class="container-flex">
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+      <h1>See Our Menu </h1>
+     </div>
+
+     <script>
+      var header = document.getElementById("header");
+      var options = {
+        root: null,
+        rootMargin: "-100px 0px 0px 0px",
+        threshold: 0.5
+      };
+    
+      var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            header.style.backgroundImage = "linear-gradient(270deg, rgba(255, 213, 0, .75) 35%, rgba(255, 0, 43, .75) 100%)";
+            header.style.opacity = 1;
+            header.style.color = "rgba(255, 85, 0, 0.66)";
+          } else {
+            header.style.backgroundImage = "none";
+            header.style.backgroundColor = "black";
+            header.style.opacity = 0;
+            header.style.color = "whitesmoke";
+          }
+        });
+      }, options);
+    
+      observer.observe(header);
+    </script>
+
+      {% block content %}
+
+      {% endblock %}
+  </body>
+</html>
